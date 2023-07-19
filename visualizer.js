@@ -39,7 +39,6 @@ function initGame(gameType, options) {
 function runGame(json, starterCode) {
     gameObj.loadLevel(json);
     gameObj.loadCode(starterCode);
-    console.log(gameObj.fetchCode());
 }
 
 function fetchAssets(gameType) {
