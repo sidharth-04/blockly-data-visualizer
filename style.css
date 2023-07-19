@@ -1,0 +1,39 @@
+body {
+  background: #E2E7EA;
+}
+section.game-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+button.ui-button{
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2vw;
+  margin: 5px 0;
+  padding: 7px 15px;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+button#runcode {
+  background-color: #AECB2A;
+}
+button#restartcode {
+  background-color: #FFB017;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.lightshade {
+  background-color: rgb(243, 243, 243);
+}

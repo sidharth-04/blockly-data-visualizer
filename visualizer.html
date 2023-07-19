@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-md mt-4 p-3 mb-4 lightshade rounded-3">
+      <h2>Data Visualizer</h2>
+      <section class="game-wrapper">
+        <div id="canvas" style="width: 400px; height: 400px;"></div>
+        <div id="blocklyArea" style="height: 400px; width: calc(100% - 400px);"><div id="blockly" style="postion: absolute;"></div></div>
+      </section>
+      <xml id="toolbox" style="display: none">
+      </xml>
+      <button class="ui-button" id="runcode" type="button" name="button">Run Code</button>
+      <button class="ui-button" id="restartcode" type="button" name="button">Restart Code</button>
+    </div>
+    <div class="container-md mt-4 p-3 mb-4 lightshade rounded-3">
+      <h2>Tables</h2>
+      <div class="row" id="table-holder">
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Load the games library using the unpgk cdn -->
+  <script src="https://unpkg.com/gameslib/dist/main.js"></script>
+  <script src="tableLoader.js"></script>
+  <script src="visualizer.js"></script>
+</html>
